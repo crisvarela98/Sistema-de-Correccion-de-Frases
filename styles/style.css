@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.5s;
+  background-color: #f9f9f9; /* Fondo claro */
+  color: #333; /* Color del texto en modo claro (día) */
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 2px solid;
+    border-radius: 15px;
+    transition: border-color 0.5s;
+}
+
+h1 {
+    color: #333; /* Color del texto en modo claro (día) */
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  color: #ff8c00; /* Texto naranja */
+  background-color: #ffeb3b; /* Fondo naranja */
+}
+
+#resultado {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Colores de día */
+body, .container, button {
+    background-color: #f9f9f9; /* Fondo claro */
+    color: #333; /* Color del texto en modo claro (día) */
+}
+
+button {
+    color: #ff8c00; /* Texto naranja */
+    background-color: #ffeb3b; /* Fondo naranja */
+}
+
+/* Colores de noche */
+body.noche, .container.noche, button.noche {
+    background-color: #333; /* Fondo oscuro */
+    color: #fff; /* Color del texto en modo noche (blanco) */
+}
+
+button.noche {
+    color: #4caf50; /* Texto verde */
+    background-color: #8bc34a; /* Fondo verde */
+}
+
+/* Color del título y resultado en modo noche */
+h1.noche, #resultado.noche {
+    color: #fff; /* Color del texto en modo noche (blanco) */
+}

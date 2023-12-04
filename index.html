@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Corrección de Frases</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="noche">Sistema de Corrección de Frases</h1>
+        <button id="cambiarTema" onclick="cambiarTema()">Cambiar Tema</button>
+        <form id="formulario">
+            <label for="frase">Ingresa tu frase:</label>
+            <input type="text" id="frase" required>
+            <button type="button" onclick="corregirFrase()" >Corregir</button>
+        </form>
+
+        <div id="resultado" class="noche"></div>
+    </div>
+    <script src="scripts/app.js"></script>
+</body>
+</html>
