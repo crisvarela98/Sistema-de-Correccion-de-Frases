@@ -1,8 +1,384 @@
 {
-  "palabrasOfensivas": {
-    "calle": "experiencia",
-    "caca": "excremento", 
-    "voy en bondi":"voy en autobus",
-    "alto bondi" : "problema grande"
-  }
+  "correcciones": [
+    {
+        "palabra": "calle",
+        "correccion": "experiencia"
+    },
+    {
+        "palabra": "caca",
+        "correccion": "excremento"
+    },
+    {
+        "frase": "voy en bondi",
+        "correccion": "voy en autobus"
+    },
+    {
+        "frase": "alto bondi",
+        "correccion": "un problema grande"
+    },
+    {
+        "frase": "ni loco",
+        "correccion": "no lo haria"
+    },
+    {
+        "palabra": "caliente",
+        "correccion": "irritado"
+    },
+    {
+        "palabra": "picado",
+        "correccion": "borracho"
+    },
+    {
+        "palabra": "fierro",
+        "correccion": "pistola"
+    },
+    {
+        "palabra": "jodido",
+        "correccion": "en problemas"
+    },
+    {
+        "palabra": "arrebato",
+        "correccion": "golpe"
+    },
+    {
+        "palabra": "quemado",
+        "correccion": "expuesto"
+    },
+    {
+        "palabra": "hinchapelota",
+        "correccion": "persona molestas"
+    },
+    {
+        "palabra": "hinchapelotas",
+        "correccion": "personas molestas"
+    },
+    {
+        "palabra": "rayado",
+        "correccion": "enojado"
+    },
+    {
+        "palabra": "podrido",
+        "correccion": "agotado"
+    },
+    {
+        "palabra": "amargado",
+        "correccion": "de mal humor"
+    },
+    {
+        "palabra": "furioso",
+        "correccion": "muy enojado"
+    },
+    {
+        "palabra": "chamuyero",
+        "correccion": "engañoso"
+    },
+    {
+        "palabra": "cruzado",
+        "correccion": "enojado"
+    },
+    {
+        "palabra": "embocado",
+        "correccion": "molesto"
+    },
+    {
+        "palabra": "acidito",
+        "correccion": "de mal humor"
+    },
+    {
+        "palabra": "colgado",
+        "correccion": "distraído"
+    },
+    {
+        "palabra": "enroscado",
+        "correccion": "enojado"
+    },
+    {
+        "frase": "largando chispas",
+        "correccion": "muy enojado"
+    },
+    {
+        "palabra": "desquiciado",
+        "correccion": "fuera de control"
+    },
+    {
+        "palabra": "desencajado",
+        "correccion": "desconcertado"
+    },
+    {
+        "palabra": "hartado",
+        "correccion": "cansado"
+    },
+    {
+        "palabra": "trancao",
+        "correccion": "enojado"
+    },
+    {
+        "palabra": "sacado",
+        "correccion": "enojado"
+    },
+    {
+        "palabra": "mosqueado",
+        "correccion": "molesto"
+    },
+    {
+        "palabra": "enloquecido",
+        "correccion": "fuera de control"
+    },
+    {
+        "palabra": "veneno",
+        "correccion": "enojado"
+    },
+    {
+        "palabra": "chivo",
+        "correccion": "molesto"
+    },
+    {
+        "palabra": "complicado",
+        "correccion": "en problemas"
+    },
+    {
+        "palabra": "alterado",
+        "correccion": "enojado"
+    },
+    {
+        "palabra": "enfurecido",
+        "correccion": "muy enojado"
+    },
+    {
+        "frase": "tirando mala onda",
+        "correccion": "emitiendo energía negativa"
+    },
+    {
+        "palabra": "peleado",
+        "correccion": "en conflicto"
+    },
+    {
+        "palabra": "atrapado",
+        "correccion": "en problemas"
+    },
+    {
+        "palabra": "aplomado",
+        "correccion": "serio"
+    },
+    {
+        "palabra": "descerebrado",
+        "correccion": "irracional"
+    },
+    {
+        "frase": "enojado hasta las patas",
+        "correccion": "muy enojado"
+    },
+    {
+        "frase": "del orto",
+        "correccion": "de mala suerte"
+    },
+    {
+        "palabra": "chinchudo",
+        "correccion": "ofuscado"
+    },
+    {
+        "palabra": "al palo",
+        "correccion": "demasiado"
+    },
+    {
+        "frase": "hasta las manos",
+        "correccion": "en una situacion dificil"
+    },
+    {
+        "palabra": "chamuscado",
+        "correccion": "enojado"
+    },
+    {
+        "palabra": "patoteado",
+        "correccion": "amedrentado"
+    },
+    {
+        "palabra": "puteando en arameo",
+        "correccion": "maldiciendo fuertemente"
+    },
+    {
+        "palabra": "enrostrando",
+        "correccion": "recordando algo molesto a alguien"
+    },
+    {
+        "frase": "tocando las bolas",
+        "correccion": "molestando"
+    },
+    {
+        "frase": "maldiciendo hasta a la suegra",
+        "correccion": "maldiciendo fuertemente"
+    },
+    {
+        "palabra": "aspero",
+        "correccion": "desagradable"
+    },
+    {
+        "frase": "con el humo negro",
+        "correccion": "enojado"
+    },
+    {
+        "frase": "con el diario del lunes",
+        "correccion": "criticando retrospectivamente"
+    },
+    {
+        "palabra": "amotinado",
+        "correccion": "muy enojado"
+    },
+    {
+        "frase": "echando humo",
+        "correccion": "muy enojado"
+    },
+    {
+        "frase": "con el termometro en el orto",
+        "correccion": "muy enojado"
+    },
+    {
+        "frase": "con cara de pocos amigos",
+        "correccion": "aspecto serio y enojado"
+    },
+    {
+        "frase": "con la vena hinchada",
+        "correccion": "muy enojado"
+    },
+    {
+        "frase": "con el diente apretado",
+        "correccion": "con rabia contenida"
+    },
+    {
+        "frase": "con la sangre en el ojo",
+        "correccion": "muy enojado"
+    },
+    {
+        "frase": "con la pava hirviendo",
+        "correccion": "muy enojado"
+    },
+    {
+        "frase": "con el cuchillo entre los dientes",
+        "correccion": "dispuesto a todo"
+    },
+    {
+        "frase": "con el ceño fruncido",
+        "correccion": "con el entrecejo fruncido, molesto"
+    },
+    {
+        "frase": "con la paciencia agotada",
+        "correccion": "sin paciencia, molesto"
+    },
+    {
+        "frase": "con el puño cerrado",
+        "correccion": "en senal de enojo"
+    },
+    {
+        "frase": "con el animo por el suelo",
+        "correccion": "desanimado"
+    },
+    {
+        "frase": "esta con la cola entre las piernas",
+        "correccion": "tiene miedo"
+    },
+    {
+        "frase": "con el corazon en la mano",
+        "correccion": "abierto"
+    },
+    {
+        "frase": "con el orgullo herido",
+        "correccion": "herido emocionalmente"
+    },
+    {
+        "frase": "con el rencor a cuestas",
+        "correccion": "con resentimiento acumulado"
+    },
+    {
+        "frase": "con la bronca contenida",
+        "correccion": "con enojo reprimido"
+    },
+    {
+        "frase": "con el veneno en la lengua",
+        "correccion": "hablando con malicia"
+    },
+    {
+        "frase": "mala leche",
+        "correccion": "malintencionado"
+    },
+    {
+        "frase": "con la lengua afilada",
+        "correccion": "hablando con sarcasmo"
+    },
+    {
+        "frase": "con el veneno en la mirada",
+        "correccion": "mirando con enojo"
+    },
+    {
+        "frase": "con la mirada fulminante",
+        "correccion": "mirada intensa y molesta"
+    },
+    {
+        "frase": "con el alma envenenada",
+        "correccion": "con sentimientos negativos"
+    },
+    {
+        "frase": "con la mente en ebullicion",
+        "correccion": "con pensamientos agitados"
+    },
+    {
+        "frase": "con la furia a flor de piel",
+        "correccion": "muy enojado"
+    },
+    {
+        "frase": "con la boca llena de maldiciones",
+        "correccion": "hablando con groserias"
+    },
+    {
+        "frase": "con el gesto adusto",
+        "correccion": "con expresion facial seria y enojada"
+    },
+    {
+        "frase": "con la cara de pocos amigos",
+        "correccion": "con expresion facial seria y molesta"
+    },
+    {
+        "frase": "con el humor por el suelo",
+        "correccion": "de mal humor"
+    },
+    {
+        "frase": "con la paciencia colmada",
+        "correccion": "sin paciencia, molesto"
+    },
+    {
+        "frase": "con el grito en la garganta",
+        "correccion": "a punto de explotar de enojo"
+    },
+    {
+        "frase": "con el veneno en la voz",
+        "correccion": "hablando con tono molesto"
+    },
+    {
+        "frase": "con la lengua viperina",
+        "correccion": "hablando con malicia"
+    },
+    {
+        "frase": "con el ceño fruncido hasta las orejas",
+        "correccion": "muy molesto"
+    },
+    {
+        "frase": "con la paciencia agujereada",
+        "correccion": "sin paciencia y molesto"
+    },
+    {
+        "frase": "con el humor en el sotano",
+        "correccion": "de muy mal humor"
+    },
+    {
+        "frase": "con la bilis subiendo por la garganta",
+        "correccion": "muy enojado"
+    },
+    {
+        "frase": "con el mal humor a cuestas",
+        "correccion": "de mal humor"
+    },
+    {
+        "frase": "con el higado a punto de explotar",
+        "correccion": "a punto de perder la paciencia"
+    }
+  ]
 }

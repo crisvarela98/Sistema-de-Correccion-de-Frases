@@ -1,23 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistema de Corrección de Frases</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="/styles/style.css">
+    <title>CorrigeFrases</title>
 </head>
 <body>
-  <div class="container">
-    <h1 class="noche">Sistema de Corrección de Frases</h1>
-        <button id="cambiarTema" onclick="cambiarTema()">Cambiar Tema</button>
-        <form id="formulario">
-            <label for="frase">Ingresa tu frase:</label>
-            <input type="text" id="frase" required>
-            <button type="button" onclick="corregirFrase()" >Corregir</button>
-        </form>
-
-        <div id="resultado" class="noche"></div>
+  <!-- Header -->
+  <header>
+    <div class="header-content">
+      <h1 class="logo">CorrigeFrases</h1>
     </div>
-    <script src="scripts/app.js"></script>
+  </header>
+  
+  <!-- Main Content -->
+  <main>
+  <div class="container">
+  <label for="frase">Ingrese su frase:</label>
+  <textarea id="frase" placeholder="Escriba su frase aquí..."></textarea>
+  <button onclick="corregirFrase()">Corregir</button>
+  <div id="resultado" class="resultado"></div>
+  </div>
+  </main>
+  
+  <!-- Footer -->
+  <footer> 
+  <div>Copyright © 2023 CorrigeFrases</div>
+    <div class="enlaces">
+        <a href="https://www.linkedin.com/in/cristian-varela-824324246/" target="_blank">
+            <img src="/images/linkedin.png" alt="LinkedIn">
+        </a>
+        <a href="https://github.com/crisvarela98?tab=repositories" target="_blank">
+            <img src="/images/github.png" alt="GitHub">
+        </a>
+    </div>
+  </div>
+  </footer>
+    <script src="/scripts/app.js"></script>
 </body>
 </html>

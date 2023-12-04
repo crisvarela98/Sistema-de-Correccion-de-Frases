@@ -1,5 +1,4 @@
 var correcciones;
-var temaNoche = false;
 
 async function cargarCorrecciones() {
     try {
@@ -15,24 +14,34 @@ cargarCorrecciones();
 
 function corregirFrase() {
     var fraseOriginal = document.getElementById('frase').value;
-    var palabras = fraseOriginal.split(/\s+/);
-
-    var fraseCorregida = palabras.map(function(palabra) {
-        var palabraLimpia = palabra.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g, "").toLowerCase();
-        return correcciones.palabrasOfensivas[palabraLimpia] || palabra;
-    });
+    var fraseCorregida = aplicarCorrecciones(fraseOriginal);
 
     document.getElementById('resultado').innerHTML = `
-        <p>Frase Original: ${fraseOriginal}</p>
-        <p>Frase Corregida: ${fraseCorregida.join(' ').trim()}</p>
+        <p>Frase Corregida: ${fraseCorregida}</p>
     `;
 }
 
-function cambiarTema() {
-    temaNoche = !temaNoche;
-    document.body.classList.toggle('noche', temaNoche);
-    document.querySelector('.container').classList.toggle('noche', temaNoche);
-    document.querySelector('button').classList.toggle('noche', temaNoche);
-    document.querySelector('h1').classList.toggle('noche', temaNoche);
-    document.querySelector('#resultado').classList.toggle('noche', temaNoche);
+function aplicarCorrecciones(frase) {
+    if (!correcciones || !correcciones.correcciones) {
+        console.error('Error: No se han cargado las correcciones.');
+        return frase;
+    }
+
+    // Aplicar correcciones de palabra
+    correcciones.correcciones.forEach(correccion => {
+        if (correccion.palabra) {
+            var expresionRegular = new RegExp("\\b" + correccion.palabra + "\\b", 'gi');
+            frase = frase.replace(expresionRegular, correccion.correccion);
+        }
+    });
+
+    // Aplicar correcciones de frase
+    correcciones.correcciones.forEach(correccion => {
+        if (correccion.frase) {
+            var expresionRegular = new RegExp(correccion.frase, 'gi');
+            frase = frase.replace(expresionRegular, correccion.correccion);
+        }
+    });
+
+    return frase;
 }

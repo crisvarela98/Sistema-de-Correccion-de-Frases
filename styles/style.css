@@ -1,79 +1,110 @@
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     transition: background-color 0.5s;
-  background-color: #f9f9f9; /* Fondo claro */
-  color: #333; /* Color del texto en modo claro (día) */
+    background-color: #f5f5dc; /* Beige */
+    color: #333; /* Color del texto en modo claro (día) */
+}
+
+header {
+    background-color: #f5f5dc; /* Beige */
+    color: #333; /* Color del texto en modo claro (día) */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.5s; /* Agregado para transición de color */
+}
+
+header button {
+    background-color: #f5f5dc; /* Beige */
+    color: #333; /* Color del texto en modo claro (día) */
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, border 0.3s; /* Agregado para transición de color y borde en hover */
+}
+
+header button:hover {
+    background-color: #fff; /* Blanco en hover */
+    border: 1px solid #ffd700; /* Borde dorado en hover */
+}
+
+main {
+    padding: 20px;
 }
 
 .container {
     max-width: 600px;
-    margin: 50px auto;
-    padding: 20px;
-    border: 2px solid;
-    border-radius: 15px;
-    transition: border-color 0.5s;
+    margin: 0 auto;
+    text-align: center;
 }
 
-h1 {
-    color: #333; /* Color del texto en modo claro (día) */
-}
-
-form {
-    margin-top: 20px;
-}
-
-label {
-    display: block;
-    margin-bottom: 10px;
-}
-
-input {
+textarea {
     width: 100%;
-    padding: 10px;
+    height: 100px;
     margin-bottom: 10px;
-    box-sizing: border-box;
+    resize: vertical;
 }
 
 button {
+    background-color: #ffd700; /* Dorado */
+    color: #fff; /* Blanco */
     padding: 10px 20px;
     border: none;
-    border-radius: 5px;
     cursor: pointer;
-  color: #ff8c00; /* Texto naranja */
-  background-color: #ffeb3b; /* Fondo naranja */
+    transition: background-color 0.3s, border 0.3s; /* Agregado para transición de color y borde en hover */
 }
 
-#resultado {
-    margin-top: 20px;
-    font-weight: bold;
+button:hover {
+    background-color: #fff; /* Blanco en hover */
+    border: 1px solid #ffd700; /* Borde dorado en hover */
 }
 
-/* Colores de día */
-body, .container, button {
-    background-color: #f9f9f9; /* Fondo claro */
+.resultado {
+    border: 1px solid #fff; /* Blanco */
+    padding: 10px;
+    margin-top: 10px;
+}
+
+footer {
+    background-color: #f5f5dc; /* Beige */
     color: #333; /* Color del texto en modo claro (día) */
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    transition: background-color 0.5s; /* Agregado para transición de color */
+    border: 1px solid #fff; /* Borde blanco en modo claro (día) */
 }
 
-button {
-    color: #ff8c00; /* Texto naranja */
-    background-color: #ffeb3b; /* Fondo naranja */
+.footer .enlaces a {
+    color: #333; /* Color del texto en modo claro (día) */
+    text-decoration: none;
+    margin: 0 10px;
+    transition: border 0.3s, background-color 0.3s; /* Agregado para transición de borde y color de fondo en hover */
+    border: 1px solid #fff; /* Borde blanco en modo claro (día) */
 }
 
-/* Colores de noche */
-body.noche, .container.noche, button.noche {
-    background-color: #333; /* Fondo oscuro */
-    color: #fff; /* Color del texto en modo noche (blanco) */
+.footer .enlaces a:hover {
+    border: 1px solid #ffd700; /* Borde dorado en hover */
+    background-color: #fff; /* Blanco en hover */
 }
 
-button.noche {
-    color: #4caf50; /* Texto verde */
-    background-color: #8bc34a; /* Fondo verde */
+.enlaces {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Color del título y resultado en modo noche */
-h1.noche, #resultado.noche {
-    color: #fff; /* Color del texto en modo noche (blanco) */
+.enlaces a {
+    margin: 0 10px;
+}
+
+.enlaces img {
+    width: 40px; /* Ajusta el tamaño según tus preferencias */
+    height: auto; /* Mantiene la proporción de la imagen */
 }
